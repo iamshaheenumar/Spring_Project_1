@@ -6,6 +6,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+
  <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -17,17 +20,14 @@
 
 <title>Registration</title>
 </head>
-<body style="background-color: 	#F0FFF0;">
-
+<body style="background-color: 	#4ABDAC; font-family: 'Ubuntu', serif; font-size: 18px;">
+<div class="page-header">
+  	<h1 align="center" style="font-weight:bold; background-color: #FFF; margin: 10px; padding:10px;">REGISTRATION</h1>
+</div>
 <div class="container">
 	<div class="row"> 
         
         <form:form method="post" action="save"  class="form-horizontal">
-		<fieldset>
-
-		<legend>Register Here</legend>
-
-
 
 		<div class="form-group">
   			<label class="col-md-4 control-label" for="firstName">First Name</label>  
@@ -68,19 +68,17 @@
 		<div class="form-group">
 		  	<label class="col-md-4 control-label" for="cpassword">Confirm Password</label>  
 		  	<div class="col-md-4">
-		  		<input id="cpassword" name="cpassword" placeholder="Confirm your Password" class="form-control input-md" required="" type="text">
+		  		<input id="cpassword" name="cpassword" placeholder="Confirm your Password" class="form-control input-md" required="" type="password">
 		  		<span class="help-block"> </span>  
 		  	</div>
 		</div>
 
 		<div class="form-group">
-		  <label class="col-md-4 control-label" for="textinput">Resume</label>
+		  <label class="col-md-4 control-label" for="fileBtn">Resume</label>
 		  <div class="col-md-4">
-		  	<label class="custom-file">
-  				<input type="file" id="file" class="custom-file-input">
-  				<span class="custom-file-control"></span>
+			<label class="btn btn-default btn-file">
+			     <input id="fileBtn" name="fileBtn" type="file" hidden>
 			</label>
-		    
 		  </div>
 
 		</div>
@@ -93,10 +91,6 @@
 		  </div>
 		</div>
 
-
-
-
-		</fieldset>
 		</form:form>
   
 	</div>
