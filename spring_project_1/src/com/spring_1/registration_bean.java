@@ -1,7 +1,15 @@
 package com.spring_1;
 
 public class registration_bean {
-	String firstName,lastName,email,password;
+	String firstName,lastName,email,password,fileName;
+
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
 
 	public String getFirstName() {
 		return firstName;

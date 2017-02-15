@@ -27,7 +27,7 @@
 <div class="container">
 	<div class="row"> 
         
-        <form:form method="post" action="save"  class="form-horizontal">
+        <form:form method="post" action="save"  class="form-horizontal" enctype="multipart/form-data">
 
 		<div class="form-group">
   			<label class="col-md-4 control-label" for="firstName">First Name</label>  
@@ -77,7 +77,7 @@
 		  <label class="col-md-4 control-label" for="fileBtn">Resume</label>
 		  <div class="col-md-4">
 			<label class="btn btn-default btn-file">
-			     <input id="fileBtn" name="fileBtn" type="file" hidden>
+			     <input id="file" name="file" type="file" hidden>
 			</label>
 		  </div>
 
